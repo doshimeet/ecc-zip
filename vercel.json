@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "{agents,skills,commands,rules,mcp-configs,hooks,scripts/hooks}/**/*"
+    },
+    "api/chat.js": {
+      "includeFiles": "agents/**/*.md"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api"
+    }
+  ]
+}
